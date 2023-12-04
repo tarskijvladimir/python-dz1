@@ -1,7 +1,7 @@
-a = input('Введите номер билета: ')
-b = int(a[0]) + int(a[1]) + int(a[2])
-c = int(a[3]) + int(a[4]) + int(a[5])
-if b == c:
+n = input('Введите номер билета: ')
+a = int(n[0]) + int(n[1]) + int(n[2])
+b = int(n[3]) + int(n[4]) + int(n[5])
+if a == b:
     print('счастливый номер')
 else:
     print('не счастливый номер')
