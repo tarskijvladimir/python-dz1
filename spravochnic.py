@@ -48,7 +48,10 @@ def add_contact(contact):
 
 def show_info():
     with open('phonebook.txt', 'r', encoding='UTF-8') as file:
-        print(file.read().rstrip())
+        contacts_list = file.read().rstrip().split('\n\n') 
+        for nn, contact in enumerate(contacts_list,1):
+            print(nn, contact)
+        #print(file.read().rstrip())
 
 def search_contact():
     print(
